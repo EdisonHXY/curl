@@ -28,10 +28,7 @@ import os
 import sys
 import logging
 import tempfile
-try: # Python 3
-    import configparser
-except ImportError: # Python 2
-    import ConfigParser as configparser
+import ConfigParser as configparser
 
 # Import our curl test data helper
 import curl_test_data
