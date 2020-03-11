@@ -8,7 +8,7 @@ SMB
 #
 # Server-side
 <reply>
-<data nonewline="yes">
+<data nocheck="yes">
 Basic SMB test complete
 </data>
 </reply>
@@ -22,10 +22,10 @@ smb
 <features>
 smb
 </features>
- <name>
+<name>
 Basic SMB request
- </name>
- <command>
+</name>
+<command>
 -u 'curltest:curltest' smb://%HOSTIP:%SMBPORT/TESTS/1451
 </command>
 </client>
@@ -33,7 +33,7 @@ Basic SMB request
 #
 # Verify data after the test has been "shot"
 <verify>
-<stdout nonewline="yes">
+<stdout>
 Basic SMB test complete
 </stdout>
 </verify>
